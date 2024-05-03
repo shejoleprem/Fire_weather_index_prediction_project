@@ -1,0 +1,65 @@
+<html>
+    <style>
+        h1{
+            align-items: center;
+            color: rgb(239, 247, 23);
+            margin-left: 35%;
+            margin-top: 1%;
+        }
+        input{
+            font-weight: 500;
+            border-radius: 5%;
+            border-color: black;
+            padding: 10px 10px;
+            width: 50%;
+            margin-top: 1%;
+        }
+        form{
+            border-radius: 5%;
+            align-items: center;
+            border-color: black;
+            margin-left: 35%;
+        }
+        button{
+            padding: 10px 10px; 
+            margin-top: 3%;
+            background-color: cyan;
+            font-weight: 500;
+        }
+        body{
+            background-color: #48a5ec;
+        }
+        a{
+            align-items:left;
+            color: rgb(239, 247, 23);
+            margin-left: 80%;
+            font-weight: 600;
+            margin-top: 3%;
+        }
+    </style>
+    <body>
+        <div class="lin">
+            <a href="https://github.com/shejoleprem">Github Link of Project</a>
+        </div>
+        <div class="login">
+            <h1>FWI Prediction Project Using ML</h1>
+            
+            <form action="{{url_for('predict_datapoint')}}"method="POST">
+                <input type="text" name="Temperature" placeholder="Temperature" required="required"/><br>
+                <input type="text" name="RH" placeholder="RH" required="required"/><br>
+                <input type="text" name="Ws" placeholder="Ws" required="required"/><br>
+                <input type="text" name="Rain" placeholder="Rain" required="required"/><br>
+                <input type="text" name="FFMC" placeholder="FFMC" required="required"/><br>
+                <input type="text" name="DMC" placeholder="DMC" required="required"/><br>
+                <input type="text" name="ISI" placeholder="ISI" required="required"/><br>
+                <input type="text" name="Classes" placeholder="Classes" required="required"/><br>
+                <input type="text" name="Region" placeholder="Region" required="required"/><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+        <h1>
+            THE FWI PREDICTION IS {{results}}
+        </h1>
+    <body>
+</html>
+        

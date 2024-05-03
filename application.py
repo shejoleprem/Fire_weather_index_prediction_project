@@ -8,14 +8,11 @@ application = Flask(__name__)
 app=application
 
 ## import ridge regressor and standard scaler pickle
-ridge_model=pickle.load(open('pickle_files/ridge.pkl','rb'))
-standard_scaler=pickle.load(open('pickle_files/scaler.pkl','rb'))
+ridge_model=pickle.load(open('Fire_weather_index_prediction_project-main/pickle_files/ridge.pkl','rb'))
+standard_scaler=pickle.load(open('Fire_weather_index_prediction_project-main/pickle_files/scaler.pkl','rb'))
 
-@app.route("/")
-def index():
-    return render_template('index.html')
 
-@app.route("/predict_data",methods=['GET','POST'])
+@app.route("/",methods=['GET','POST'])
 def predict_datapoint():
     if request.method=='POST':
         Temperature=float(request.form.get('Temperature'))
