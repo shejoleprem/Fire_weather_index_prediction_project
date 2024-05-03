@@ -18,11 +18,11 @@ Implementation of multiple regression models:
 
   5) Decision Tree Regression
 
-  6) Model evaluation and performance comparison.
+Model evaluation and performance comparison.
 
-  7) Web-based user interface (UI) for user interaction
+Web-based user interface (UI) for user interaction
 
-  8) Integration of the trained model with a Flask backend
+Integration of the trained model with a Flask backend
 
 
 # To run flask application 
