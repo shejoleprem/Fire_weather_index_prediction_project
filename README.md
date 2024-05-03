@@ -8,24 +8,24 @@ Exploratory data analysis and visualization
 
 Implementation of multiple regression models:
 
-  Ridge Regression
+  1) Ridge Regression
 
-  Lasso Regression
+  2) Lasso Regression
 
-  Multiple Linear Regression
+  3) Multiple Linear Regression
 
-  Random Forest Regression
+  4) Random Forest Regression
 
-  Decision Tree Regression
+  5) Decision Tree Regression
 
-  Model evaluation and performance comparison.
+  6) Model evaluation and performance comparison.
 
-  Web-based user interface (UI) for user interaction
+  7) Web-based user interface (UI) for user interaction
 
-  Integration of the trained model with a Flask backend
+  8) Integration of the trained model with a Flask backend
 
 
-To run flask application 
+# To run flask application 
 
 ```
 python app.py
